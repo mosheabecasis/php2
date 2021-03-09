@@ -1,0 +1,129 @@
+/*
+Theme Name: MA
+Theme URI: https://makarapo.com
+Author: moshe
+Author URI: https://ma.com
+Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: MA 
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0; 
+}
+html, body {
+    height : 100%;
+}
+body{
+    font-family:'Montserrat' , sans-serif;
+    margin: 0;
+}
+#top{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background:#006d77;
+    width:100%;
+    padding:5px 5px; 
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    flex-wrap: wrap;  
+    width:50%;
+    margin:5px;
+    height:100%;
+    
+}
+#about p{
+    padding:5px 0;
+}
+#about-image{
+     background-image: url("./pics/self.jpg");  
+     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #ccc;
+    position: sticky;
+    border-top: 1px solid #ccc;
+    border-radius: 8px;
+    width:200px;
+    height:200px;
+    
+}
+#skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content:space-around;
+  
+}
+#skills div{
+    height:30px;
+     width:110px; 
+    border-radius: 8px;
+     text-align: center; 
+    font-size:20px;
+    font-weight: bold;
+    color:#fff;
+    background-color:#000;
+    
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    color:#fff;
+    margin:5px 0;
+}
+#contact a{
+    color:#fff;
+    text-decoration: none;
+    margin:5px 0;
+}
+.portfolio{
+   display: flex;
+   align-items: center;
+   justify-content:space-around;
+   background-color:#8ecae6;
+   height:300px;
+}
+.desc{
+   display: flex;
+   flex-direction: column; 
+   width:400px;                           
+}
+
+.pic{
+    width:400px;
+  height:200px; 
+   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; 
+  outline: none;
+} 
+ #site-footer {
+  display: block;
+  bottom: 0;
+  left: 30%;
+}
+.footer-credits {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.section-inner {
+  display: flex;
+}
